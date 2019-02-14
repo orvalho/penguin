@@ -16,8 +16,8 @@
   position: relative;
   margin: auto;
   margin-top: 20%;
-  width: 300px;
-  height: 300px;
+  width: 75%;
+  height: 75%;
 }
 
 .penguin * {
@@ -26,7 +26,8 @@
 
 /*** penguin bottom ***/
 .penguin-bottom {
-  background: var(--penguin-skin, black);
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
   top: 40%;
   left: 22.5%;
   width: 55%;
@@ -35,7 +36,8 @@
 }
 
 .hand {
-  background: var(--penguin-skin, black);
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
   top: 0%;
   width: 30%;
   height: 60%;
@@ -48,13 +50,34 @@
 }
 
 .right-hand {
-  left: -5%;
+  left: 25%;
   border-radius: 20% 20% 100% 20%;
-  transform: rotate(55deg);
+  transform: rotate(130deg);
+  animation-name: wawe;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 0% 0%;
 }
 
+@keyframes wawe {
+  10% {
+    transform: rotate(110deg);
+  }
+  30% {
+    transform: rotate(130deg);
+  }
+  50% {
+    transform: rotate(110deg);
+  }
+  70% {
+    transform: rotate(130deg);
+  }
+  }
+
 .feet {
-  background: var(--penguin-beak, orange);
+  background: #FF6B35;
+  background: var(--penguin-beak, #FF6B35);
   top: 83%;
   width: 15%;
   height: 30%;
@@ -83,7 +106,8 @@
 }
 
 .bow-tie .middle {
-  background: var(--bow-tie-middle);
+  background: #17BEBB;
+  background: var(--bow-tie-middle, #17BEBB);
   top: 30%;
   left: 37.5%;
   width: 25%;
@@ -92,7 +116,8 @@
 }
 
 .bow-tie .left-edge {
-  background: var(--bow-tie-edge);
+  background: #2CC3C1;
+  background: var(--bow-tie-edge, #2CC3C1);
   top: 20%;
   left: 50%;
   width: 50%;
@@ -101,7 +126,8 @@
 }
 
 .bow-tie .right-edge {
-  background: var(--bow-tie-edge);
+  background: #2CC3C1;
+  background: var(--bow-tie-edge, #2CC3C1);
   top: 20%;
   left: 0%;
   width: 50%;
@@ -111,7 +137,8 @@
 
 /*** penguin top ***/
 .penguin-top {
-  background: var(--penguin-skin, black);
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
   top: 10%;
   left: 25%;
   width: 50%;
@@ -120,7 +147,8 @@
 }
 
 .cheek {
-  background: var(--penguin-belly, white);
+  background: #DADCCE;
+  background: var(--penguin-belly, #DADCCE);
   top: 15%;
   width: 60%;
   height: 70%;
@@ -136,7 +164,8 @@
 }
 
 .eye {
-  background: var(--penguin-eye, black);
+  background: #25171A;
+  background: var(--penguin-eye, #25171A);
   top: 45%;
   width: 15%;
   height: 17%;
@@ -152,7 +181,8 @@
 }
 
 .sparkle {
-  background: var(--penguin-sparkle, yellow);
+  background: #F7FFF7;
+  background: var(--penguin-sparkle, #F7FFF7);
   top: 25%;
   left: 15%;
   width: 35%;
@@ -161,7 +191,8 @@
 }
 
 .blush {
-  background: var(--penguin-blush, pink);
+  background: #FFA69E;
+  background: var(--penguin-blush, #FFA69E);
   top: 65%;
   width: 15%;
   height: 10%;
@@ -177,7 +208,8 @@
 }
 
 .beak {
-  background: var(--penguin-beak, orange);
+  background: #FF6B35;
+  background: var(--penguin-beak, #FF6B35);
   border-radius: 50%;
 }
 
@@ -196,7 +228,8 @@
 }
 
 .belly {
-  background: var(--penguin-belly, white);
+  background: #DADCCE;
+  background: var(--penguin-belly, #DADCCE);
   left: 2.5%;
   top: 60%;
   width: 95%;
@@ -212,7 +245,8 @@
 }
 
 .crest .long {
-  background: var(--penguin-skin, black);
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
   top: 0%;
   left: 50%;
   width: 30%;
@@ -222,7 +256,8 @@
 }
 
 .crest .short {
-  background: var(--penguin-skin, black);
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
   top: 20%;
   left: 46%;
   width: 25%;
@@ -245,7 +280,8 @@
 
 .ballon .heart {
   --ballon: #FFA69E;
-  background: var(--ballon);
+  background: #FFA69E;
+  background: var(--ballon, #FFA69E);
   position: absolute;
   top: -11%;
   left: 85%;
@@ -258,7 +294,8 @@
 .ballon .heart::after {
   content: "";
   position: absolute;
-  background: var(--ballon);
+  background: #FFA69E;
+  background: var(--ballon, #FFA69E);
   left: 50%;
   width: 50px;
   height: 50px;
@@ -268,7 +305,8 @@
 .ballon .heart::before {
   content: "";
   position: absolute;
-  background: var(--ballon);
+  background: #FFA69E;
+  background: var(--ballon, #FFA69E);
   top: -50%;
   left: 0px;
   width: 50px;
@@ -279,7 +317,8 @@
 /******************************      hearts       *****************************/
 .hearts .big {
   --big-heart: #FFDEDB;
-  background: var(--big-heart);
+  background: #FFDEDB;
+  background: var(--big-heart, #FFDEDB);
   position: absolute;
   top: 10%;
   left: 20%;
@@ -290,7 +329,8 @@
 
 .hearts .big::after {
 content: "";
-background: var(--big-heart);
+background: #FFDEDB;
+background: var(--big-heart, #FFDEDB);
 position: absolute;
 left: 50%;
 width: 20px;
@@ -300,7 +340,8 @@ border-radius: 50%;
 
 .hearts .big::before {
 content: "";
-background: var(--big-heart);
+background: #FFDEDB;
+background: var(--big-heart, #FFDEDB);
 position: absolute;
 left: 0%;
 top: -50%;
@@ -311,10 +352,11 @@ border-radius: 50%;
 
 .hearts .small {
   --small-heart: #FFE1DE;
-  background: var(--small-heart);
+  background: #FFE1DE;
+  background: var(--small-heart, #FFE1DE);
   position: absolute;
-  top: 23%;
-  left: 25%;
+  top: 16%;
+  left: 27%;
   width: 10px;
   height: 10px;
   transform: rotate(-55deg);
@@ -322,7 +364,8 @@ border-radius: 50%;
 
 .hearts .small::after {
   content: "";
-  background: var(--small-heart);
+  background: #FFE1DE;
+  background: var(--small-heart, #FFE1DE);
   position: absolute;
   left: 50%;
   width: 10px;
@@ -332,7 +375,8 @@ border-radius: 50%;
 
 .hearts .small::before {
   content: "";
-  background: var(--small-heart);
+  background: #FFE1DE;
+  background: var(--small-heart, #FFE1DE);
   position: absolute;
   top: -50%;
   left: 0%;
